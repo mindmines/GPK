@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" 
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!-- Search, should appear as action button -->
+    
+    <item android:id="@+id/kart_item_count"
+          android:title="5"
+          android:icon="@drawable/kart"
+          android:numericShortcut="@string/count"
+          android:menuCategory="container"
+          app:showAsAction="always"
+           />
+    
+    <item android:id="@+id/kart"
+          android:icon="@drawable/shape_count"
+          android:title="@string/app_name"
+          android:actionLayout="@layout/feed_update_count"
+          app:showAsAction="always"
+           />
+    
+   <!--  MenuItem item = menu.findItem(R.id.badge); 
+    MenuItemCompat.setActionView(item, R.layout.feed_update_count); 
+    notifCount = (Button) MenuItemCompat.getActionView(item);
+     -->
+    
+    <!-- f07a  -->
+ <!--    <com.sample.font.awsome.TextAwesome
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/fa_shopping_cart"
+    android:textSize="30sp" 
+    android:textColor="#000000"/> -->
+</menu>
+

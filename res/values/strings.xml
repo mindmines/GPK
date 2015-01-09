@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">GPK</string>
+    <string name="hello_world">Hello world!</string>
+     <string name="count">5</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu_detail">MenuDetail</string>
+    <string name="fa_shopping_cart">&#xf07a;</string>
+
+</resources>

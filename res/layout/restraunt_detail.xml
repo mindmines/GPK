@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+   <!--  <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" /> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/gpk_detail_bg"
+         >
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/img_restaurant"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/res_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/img_restaurant"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/img_restaurant"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingRight="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/res_name"
+            android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:layout_toLeftOf="@+id/img_restaurant"
+            android:text="TextView"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_menus"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+    </ListView>
+
+</LinearLayout>

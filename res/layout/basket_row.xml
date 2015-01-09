@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="30dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:textSize="16sp"
+        android:singleLine="true"
+        android:maxEms="3"
+        android:gravity="center_horizontal"
+        android:inputType="number"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+         />
+
+    <TextView
+        android:id="@+id/tv_actual_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText1"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignRight="@+id/textView1"
+        android:text="TextView"
+        android:textSize="14sp"
+        android:paddingRight="10dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_marginLeft="28dp"
+        android:layout_toLeftOf="@+id/tv_quanity_price"
+        android:layout_toRightOf="@+id/editText1"
+        android:text="TextView"
+        android:paddingRight="10dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_quanity_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:textSize="18sp"
+        android:padding="5dp"
+        android:textColor="@android:color/black"
+        android:text="TextView" />
+
+</RelativeLayout>

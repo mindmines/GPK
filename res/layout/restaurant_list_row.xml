@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        
+    <RelativeLayout
+        android:layout_width="180dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" 
+        android:layout_marginLeft="10dp"
+        >
+
+        <TextView
+            android:id="@+id/res_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="22sp"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical|left"
+            android:singleLine="true"
+            android:text="one" />
+
+        <TextView
+            android:id="@+id/resMinOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@+id/res_name"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="40dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="16sp"
+            
+            android:text="two" />
+
+        <TextView
+            android:id="@+id/res_delivery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/resMinOrder"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:gravity="center_vertical|left"
+            android:layout_marginTop="5dp"
+            android:text="three" />
+
+    </RelativeLayout>
+
+    <com.loopj.android.image.SmartImageView
+        android:id="@+id/resImage"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+        
+       
+</RelativeLayout>

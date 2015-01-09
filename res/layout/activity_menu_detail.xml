@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context="com.gpk.app.MenuDetail" >
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/gpk_detail_bg"
+         >
+
+        <com.loopj.android.image.SmartImageView
+            android:id="@+id/img_restaurant"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/res_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/img_restaurant"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/img_restaurant"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:paddingRight="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/res_name"
+            android:layout_below="@+id/res_name"
+            android:layout_toLeftOf="@+id/img_restaurant"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textSize="14sp"
+            android:paddingRight="10dp"
+            android:text="TextView"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/tv_catg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_address"
+            android:layout_alignRight="@+id/img_restaurant"
+            android:layout_below="@+id/img_restaurant"
+            android:text="TextView"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textStyle="bold|italic"
+            android:gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_menuList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+    </ListView>
+
+</LinearLayout>
